@@ -23,9 +23,9 @@
 - [📝 License](#license)
 
 
-# 📖 Hello Microverse! project <a name="about-project"></a>
+# 📖 Portifolio Microverse! project <a name="about-project"></a>
 
-Hello Microverse! project is a repository consisting of the following files:
+Portifolio Microverse! project is a repository consisting of the following files:
 - HTML file (index.html)
 - CSS file (styles.css)
 
