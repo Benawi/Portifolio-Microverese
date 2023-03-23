@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-node_modules
-test.md
-=======
 # .gitignore
 node_modules
 test.md
->>>>>>> 6668a4fc508ed84f03773f066a576bf146e78d13
