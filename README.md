@@ -28,6 +28,7 @@
 Portifolio Microverse! project is a repository consisting of the following files:
 - HTML file (index.html)
 - CSS file (styles.css)
+- Html and CSS linters file
 
 
 The repository also contains files for setting up linters and validators.
@@ -126,13 +127,13 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project just star it!
+Give me ⭐️ If you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse program for providing me wthis great chance
+I would like to thank Microverse program for providing me this great chance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
