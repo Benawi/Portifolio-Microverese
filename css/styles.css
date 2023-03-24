@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+html,
+body {
+  background-color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Defauls Configs */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+/* Custom Font */
+.default-custom-font {
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.primary-text-custom-font {
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.project-title-custom-font {
+  color: #3a4a42;
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Disabled Elements */
+.disabled {
+  display: none;
+}
+
+.no-overflow-y {
+  overflow-y: hidden;
+}
+
+/* Custom Button */
+.custom-button {
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+}
+
+.custom-button:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.custom-button:active {
+  background-color: #008552;
+}
+
+/* Menu Expanded */
+.mobile-expanded-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  z-index: 1;
+}
+
+.expanded-nav {
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: flex-start;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 34px;
+}
+
+.close-img {
+  color: #67798e;
+}
+
+.expanded-menu-list {
+  list-style: none;
+  padding-top: 108px;
+  width: 100%;
+  height: 80vh;
+}
+
+.expanded-menu-item {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 24px;
+}
+
+.expanded-menu-item a {
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+/* Toolbar Container */
+.toolbar-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44px;
+  justify-content: space-between;
+}
+
+.toolbar.logo {
+  margin-left: 24px;
+  width: 90px;
+  height: 28px;
+}
+
+.toolbar.menu {
+  margin-right: 32px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #28352f;
+}
+
+.logo-text {
+  position: static;
+  left: 12px;
+  top: 10px;
+  font-weight: 600;
+}
+
+.menu-trigram {
+  background: url(./img/ham-menu-1x.png) no-repeat;
+  height: 18px;
+  width: 18px;
+  margin: 2px;
+}
+
+.menu-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: transparent;
+}
+
+/* headline section */
+.headline-container {
+  background: url(./img/headline-background.png) 50% 0% no-repeat;
+  background-size: cover;
+  margin-top: 92px;
+  padding-bottom: 42px;
+}
+
+.headline.primary-text {
+  margin: 64px 24px 0 24px;
+}
+
+.primary-text.first-color {
+  color: #172b4d;
+}
+
+.primary-text.second-color {
+  color: #36b37e;
+}
+
+.headline.supporting-text {
+  display: inline-flex;
+  margin: 58px 24px 58px 24px;
+}
+
+.sup-text-paragraph {
+  color: #172b4d;
+}
+
+.headline.social-media-icons {
+  display: inline-flex;
+  justify-content: center;
+}
+
+li {
+  align-items: center;
+  list-style: none;
+  min-width: 21px;
+  min-height: 20px;
+}
+
+.headline-item {
+  margin: 0 8px 0 8px;
+}
+
+.twitter {
+  width: 21px;
+  height: 20px;
+}
+
+.linkedin {
+  width: 21px;
+  height: 20px;
+}
+
+.medium {
+  width: 21px;
+  height: 16px;
+}
+
+.github {
+  width: 19px;
+  height: 20px;
+}
+
+.angellist {
+  width: 15px;
+  height: 20px;
+}
+
+.headline.action {
+  display: inline-flex;
+  margin-top: 62px;
+  justify-content: center;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
+}
+
+.chevron {
+  background: url(./img/chevron.png) 50% 50% no-repeat;
+  width: 40px;
+  height: 40px;
+}
