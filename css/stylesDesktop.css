@@ -11,4 +11,10 @@
   .menu-trigram {
     display: none;
   }
+
+  /* About me Section */
+  .bottom-img-mob,
+  .top-img-mob {
+    display: none;
+  }
 }
