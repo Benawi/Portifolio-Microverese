@@ -203,6 +203,8 @@
   .about-list-item {
     width: 25vw;
     max-width: 369px;
+    border: 1px solid#C1C7D0;
+    border-radius: 8px;
   }
 
   /* About section imgs */
@@ -298,16 +300,6 @@
   }
 
   .footer-divider {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: white;
-  }
-
-  .footer-divider > div {
-    width: 134px;
-    height: 5px;
-    background: #0d151e;
-    border-radius: 10px;
+    display: none;
   }
 }
