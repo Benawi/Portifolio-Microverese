@@ -17,4 +17,15 @@
   .top-img-mob {
     display: none;
   }
+
+  /* Contact Form */
+  .legend-font,
+  .contact-links.headline.social-media-icons {
+    display: none;
+  }
+
+  /* Footer */
+  .contact-email {
+    display: none;
+  }
 }
