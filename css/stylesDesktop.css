@@ -28,4 +28,40 @@
   .contact-email {
     display: none;
   }
+
+  /* Changed Elements */
+
+  /* Header Section */
+  .toolbar-container {
+    top: 0;
+    justify-content: center;
+  }
+
+  .toolbar.menu {
+    margin: 0;
+  }
+
+  .toolbar-menu-desktop {
+    margin-top: 14px;
+    display: inline-flex;
+    width: 255px;
+    justify-content: space-between;
+  }
+
+  .desktop-menu-item {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .toolbar-menu-desktop li {
+    transition: all ease-in-out 0.5s;
+  }
+
+  .toolbar-menu-desktop li:hover {
+    border-bottom: 2px solid green;
+    transform: translateY(10%);
+  }
 }
