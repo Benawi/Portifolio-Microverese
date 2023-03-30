@@ -583,15 +583,16 @@ li {
 }
 
 .form-links-icon {
-  margin-top: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contact-email {
   color: #42526e;
   text-decoration: none;
   padding: 1rem;
-  height: 157px;
-  margin-bottom: 147px;
+  height: 2px;
+  margin-bottom: 1px;
   font-size: 20px;
   line-height: 2rem;
 }
@@ -910,5 +911,28 @@ li {
   .card-work:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-out;
+  }
+
+  .footer-divider {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .footer-divider > div {
+    width: 134px;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+  }
+
+  .footer-right-img {
+    position: absolute;
+    left: 117.61%;
+    right: -116.9%;
+    top: 83.86%;
+    bottom: 1.29%;
+    transform: matrix(-0.99, 0.16, 0.16, 0.99, 0, 0);
   }
 }
