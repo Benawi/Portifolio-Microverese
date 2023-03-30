@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* RESIZING FOR DESKTOP VERSION */
+@media only screen and (min-width: 1100px) {
+  /* Disabled Elements */
+
+  /* Enabled Elements */
+
+  /* Header Section */
+  .toolbar.logo,
+  .menu-trigram {
+    display: none;
+  }
+}
