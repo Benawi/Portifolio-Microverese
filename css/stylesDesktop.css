@@ -64,6 +64,7 @@
     border-bottom: 2px solid green;
     transform: translateY(10%);
   }
+
   .headline.primary-text.flex-container-column {
     margin-top: 262px;
   }
@@ -202,5 +203,54 @@
   .about-list-item {
     width: 25vw;
     max-width: 369px;
+  }
+
+  /* About section imgs */
+  .bottom-img-desk {
+    display: block;
+    position: absolute;
+    right: calc((100vw - 224px) / 2);
+  }
+
+  .top-img-desk {
+    display: block;
+    position: absolute;
+    left: calc((100vw - 224px) / 2);
+  }
+
+  /* Contact Section */
+  .section-contact-container {
+    position: relative;
+    width: 81vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .legend-font-desktop {
+    display: flex;
+    color: #172b4d;
+    max-width: 500px;
+    flex: 1.8;
+    height: 256px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 52px;
+    margin-right: 20px;
+  }
+
+  .form-container {
+    max-width: 684px;
+    flex: 2;
+    align-items: flex-start;
+  }
+
+  .default-input-style,
+  .default-textarea-style {
+    width: calc(100% - 1rem);
   }
 }
