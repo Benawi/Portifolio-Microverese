@@ -388,7 +388,7 @@ li {
   border-radius: 8px;
   border: 1px solid #d0d9d4;
   background-color: #ebf0ee;
-  margin-bottom: 24px;
+  margin-bottom: 1px;
 }
 
 .card-img {
@@ -402,6 +402,7 @@ li {
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
+  
 }
 
 .project-title {
