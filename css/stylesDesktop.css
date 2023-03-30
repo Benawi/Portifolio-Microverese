@@ -253,4 +253,26 @@
   .default-textarea-style {
     width: calc(100% - 1rem);
   }
+
+  /* Contact Form Images */
+  .form-desktop-img {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .form-desktop-img.third-img {
+    left: calc((1200px - 223px) + ((100vw - 1200px) / 2));
+    bottom: -50%;
+  }
+
+  .form-desktop-img.second-img {
+    right: calc((1200px - 408px) + ((100vw - 1200px) / 2));
+    bottom: -30%;
+  }
+
+  .form-desktop-img.first-img {
+    right: calc((1200px - 194px) + ((100vw - 1200px) / 2));
+    bottom: -50%;
+  }
 }
