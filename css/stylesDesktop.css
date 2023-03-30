@@ -275,4 +275,39 @@
     right: calc((1200px - 194px) + ((100vw - 1200px) / 2));
     bottom: -50%;
   }
+
+  /* footer section */
+  .desktop-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #dfe1e6;
+    margin-top: 225px;
+    margin-bottom: 26px;
+  }
+
+  .desktop-footer-list {
+    margin-top: 25px;
+    border-top: 1px;
+  }
+
+  .about-list-item:hover,
+  .card-work:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-out;
+  }
+
+  .footer-divider {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .footer-divider > div {
+    width: 134px;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+  }
 }
