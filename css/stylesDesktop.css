@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 /* RESIZING FOR DESKTOP VERSION */
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 768px) {
   /* Disabled Elements */
 
   /* Enabled Elements */
