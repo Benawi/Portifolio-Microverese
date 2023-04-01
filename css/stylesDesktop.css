@@ -298,12 +298,17 @@
   .card-work:hover {
     transform: scale(1.2);
     transition: all 5s ease-out;
+    cursor: pointer;
   }
 
   a:hover,
   a:focus {
     background-color: #0c0b0b;
     color: #f7f6f2;
+  }
+
+  button:hover {
+    transition: background-color 2s;
   }
 
   .footer-divider {

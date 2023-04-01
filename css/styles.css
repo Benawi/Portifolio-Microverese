@@ -447,6 +447,7 @@ li {
   color: #fff;
   margin-top: 29px;
   margin-bottom: 24px;
+  transition: background-color 2s;
 }
 
 /* ABOUT ME SECTION */
