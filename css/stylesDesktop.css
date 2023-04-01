@@ -293,10 +293,17 @@
     border-top: 1px;
   }
 
+  /* transiton and transform css added  */
   .about-list-item:hover,
   .card-work:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
     transition: all 0.2s ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: #0c0b0b;
+    color: #f7f6f2;
   }
 
   .footer-divider {
