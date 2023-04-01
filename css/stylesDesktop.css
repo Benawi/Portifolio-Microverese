@@ -309,4 +309,16 @@
   .footer-divider {
     display: none;
   }
+
+  /* added by charles */
+
+  .project-cards-btn {
+    width: 100%;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .project-cards-btn:hover {
+    width: 102%;
+    height: 102%;
+  }
 }
