@@ -309,4 +309,9 @@
   .footer-divider {
     display: none;
   }
+
+  .project-cards-btn {
+    width: 100%;
+    transition: width 0.5s;
+  }
 }
