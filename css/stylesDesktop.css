@@ -296,8 +296,8 @@
   /* transiton and transform css added  */
   .about-list-item:hover,
   .card-work:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-out;
+    transform: scale(1.2);
+    transition: all 5s ease-out;
   }
 
   a:hover,
