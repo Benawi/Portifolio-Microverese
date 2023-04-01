@@ -300,6 +300,12 @@
     transition: all 0.2s ease-out;
   }
 
+  a:hover,
+  a:focus {
+    background-color: #0c0b0b;
+    color: #f7f6f2;
+  }
+
   .footer-divider {
     display: none;
   }
