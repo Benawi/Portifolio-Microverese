@@ -293,9 +293,10 @@
     border-top: 1px;
   }
 
+  /* transiton and transform css added  */
   .about-list-item:hover,
   .card-work:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
     transition: all 0.2s ease-out;
   }
 
