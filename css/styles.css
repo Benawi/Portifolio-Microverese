@@ -159,8 +159,7 @@ body {
 
 .logo-link {
   text-decoration: none;
-  color: #28352f;
-  transform: rotate(3.142rad);
+  color: #28352f;/* transform: rotate(3.142rad); */
 }
 
 .logo-text {
@@ -168,7 +167,10 @@ body {
   left: 12px;
   top: 10px;
   font-weight: 600;
-  transform: rotate(3600deg);
+}
+
+.logo-link:hover {
+  transform: rotate(3.142rad);
 }
 
 .menu-trigram {
