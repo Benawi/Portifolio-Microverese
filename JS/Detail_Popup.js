@@ -45,3 +45,12 @@ const CARD_WORK_SECTION = [
   ['recent-works-container', 'flex-container-column'],
   'portfolio',
 ];
+
+
+/*  Here's a const that stores the instructions for building
+    the card_work_container div element!  */
+
+
+const CARD_WORK_CONTAINER = ['div', ['card-work-container']];
+
+
