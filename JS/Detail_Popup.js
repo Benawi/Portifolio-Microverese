@@ -38,3 +38,10 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
     'card-img-6': './css/img/portfolio_snapshoot.png',
   },
 ];
+
+// creat work card section array 
+const CARD_WORK_SECTION = [
+  'section',
+  ['recent-works-container', 'flex-container-column'],
+  'portfolio',
+];
