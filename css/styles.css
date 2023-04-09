@@ -2,7 +2,7 @@
 
 html,
 body {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fff;
   width: 100%;
   overflow-x: hidden;
 }
@@ -392,7 +392,7 @@ li {
   border-radius: 8px;
   border: 1px solid #d0d9d4;
   background-color: #ebf0ee;
-  margin-bottom: 1px;
+  margin-bottom: 24px;
 }
 
 .card-img {
@@ -406,7 +406,6 @@ li {
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
-  margin-top: 233px;
 }
 
 .project-title {
@@ -447,7 +446,6 @@ li {
   color: #fff;
   margin-top: 29px;
   margin-bottom: 24px;
-  transition: background-color 2s;
 }
 
 /* ABOUT ME SECTION */
