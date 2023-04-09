@@ -50,7 +50,21 @@ const CARD_WORK_SECTION = [
 /*  Here's a const that stores the instructions for building
     the card_work_container div element!  */
 
-
 const CARD_WORK_CONTAINER = ['div', ['card-work-container']];
 
-
+// container that stores all the different card works
+const DEFAULT_CARD_WORK_HEADER = [
+  ['div', ['recent-works', 'intro-header', 'flex-container-column']],
+  ['div', ['intro-header', 'primary-text']],
+  [
+    'h2',
+    [
+      'recent-work-text',
+      'primary-text',
+      'first-color',
+      'primary-text-custom-font',
+    ],
+    'work-title',
+  ],
+  ['div', ['intro-header', 'indicator']],
+];
