@@ -165,3 +165,9 @@ function addElementId(element, id, iterationPosFix) {
     element.setAttribute('id', id + iterationPosFix);
   }
 }
+// add type to the element passed as a parameter
+function addElementType(element, type) {
+  if (type) {
+    element.setAttribute('type', type);
+  }
+}
