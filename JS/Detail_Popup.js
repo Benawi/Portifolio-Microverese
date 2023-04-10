@@ -313,3 +313,47 @@ function appendInOrder(arrayOfElements, order, techs) {
 
   return parentElement;
 }
+// Building the entire cardworkcontainer and nesting the childs to it
+function buildCardWorkContainer(propsRules) {
+  const cardWorkContainer = buildElement(CARD_WORK_CONTAINER);
+
+  const childElements = [];
+  let iteration = 1;
+
+  propsRules.forEach((objRule) => {
+    const child = appendInOrder(
+      buildAllElements(DEFAULT_CARD_WORK, iteration, objRule.techs),
+      DEFAULT_CARD_WORK_ORDER,
+      objRule.techs,
+    );
+
+    iteration += 1;
+    const titleKey = Object.keys(objRule)[0];
+    const imgKey = Object.keys(objRule)[2];
+
+    const titleKeyId = `#${titleKey}`;
+    const imgKeyId = `#${imgKey}`;
+
+    const titleChild = child.querySelector(titleKeyId);
+    const imgChild = child.querySelector(imgKeyId);
+    const liH3Items = child.querySelectorAll('.custom-tags-font');
+    const buttonItem = child.querySelector('.card-button');
+
+    for (let i = 0; i < objRule.techs.length; i += 1) {
+      liH3Items[i].textContent = objRule.techs[i];
+    }
+
+    buttonItem.textContent = 'See Project';
+
+    titleChild.textContent = objRule[titleKey];
+    imgChild.setAttribute('src', objRule[imgKey]);
+
+    childElements.push(child);
+  });
+
+  childElements.forEach((child) => {
+    cardWorkContainer.appendChild(child);
+  });
+
+  return cardWorkContainer;
+}
