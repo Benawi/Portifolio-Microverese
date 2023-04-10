@@ -171,3 +171,9 @@ function addElementType(element, type) {
     element.setAttribute('type', type);
   }
 }
+// add name to the element passed as a parameter
+function addElementName(element, name) {
+  if (name) {
+    element.setAttribute('name', name);
+  }
+}
