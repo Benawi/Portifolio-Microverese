@@ -68,3 +68,33 @@ const DEFAULT_CARD_WORK_HEADER = [
   ],
   ['div', ['intro-header', 'indicator']],
 ];
+/*
+
+   This is a companion of all multi-dimensional arrays in this house,
+   it defines the order that the elements should be nested and all the parent/child relations
+
+*/
+
+const DEFAULT_CARD_WORK_HEADER_ORDER = [0, 1, 2, 1];
+
+/*
+  Array defined in a way that later on a element will be build with
+  the correct child elements, classNames and Ids
+
+*/
+const DEFAULT_CARD_WORK = [
+  ['div', ['card-work', 'flex-container-column', 'card'], 'card-work'],
+  ['img', ['card-img', 'card-img'], 'card-img'],
+  ['div', ['card-text', 'flex-container-column', 'card-text'], 'card-text'],
+  ['div', ['project-title']],
+  ['h2', ['project-title-custom-font', 'card-title'], 'card-title'],
+  ['ul', ['card-tags', 'flex-container-row'], 'card-tags'],
+  [
+    'button',
+    ['card-button', 'custom-button', 'default-custom-font'],
+    'card-button',
+    'see-project',
+    'See Project',
+    'See Project',
+  ],
+];
