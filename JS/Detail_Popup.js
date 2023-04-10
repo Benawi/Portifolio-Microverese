@@ -200,3 +200,14 @@ function appendAfterElement(newElement, referenceElement) {
     referenceElement.parentNode.appendChild(newElement);
   }
 }
+// This functions takes one array parameter and build one element
+function buildElement(instructions, iterationPosFix = '') {
+  const newElement = generateElement(instructions[0]);
+  addElementClassName(newElement, instructions[1]);
+  addElementId(newElement, instructions[2], iterationPosFix);
+  addElementType(newElement, instructions[3]);
+  addElementName(newElement, instructions[4]);
+  addElementValue(newElement, instructions[5]);
+  addOnClickValue(newElement, instructions[6]);
+  return newElement;
+}
