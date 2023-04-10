@@ -357,3 +357,16 @@ function buildCardWorkContainer(propsRules) {
 
   return cardWorkContainer;
 }
+
+// building entire cardWorkHeader and appending it in correct order
+function buildCardWorkHeader() {
+  const child = appendInOrder(
+    buildAllElements(DEFAULT_CARD_WORK_HEADER),
+    DEFAULT_CARD_WORK_HEADER_ORDER,
+  );
+
+  const titleChild = child.querySelector('#work-title');
+  titleChild.textContent = 'My Recent Works';
+
+  return child;
+}
