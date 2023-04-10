@@ -158,3 +158,10 @@ function addElementClassName(element, name) {
     element.classList.add(className);
   });
 }
+
+// add id to the element passed as a parameter
+function addElementId(element, id, iterationPosFix) {
+  if (id) {
+    element.setAttribute('id', id + iterationPosFix);
+  }
+}
