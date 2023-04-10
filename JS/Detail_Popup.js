@@ -183,3 +183,9 @@ function addElementValue(element, value) {
     element.setAttribute('value', value);
   }
 }
+// add onclick to the element passed as a parameter
+function addOnClickValue(element, value) {
+  if (value) {
+    element.setAttribute('onclick', value);
+  }
+}
