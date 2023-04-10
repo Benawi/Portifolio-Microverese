@@ -260,3 +260,56 @@ function findDeepestChild(elementOrder) {
 
   return index;
 }
+
+/*
+
+   managed to get all elements nested correctly, but a requirement
+  is needed in the order that they're declared in the multi-dimensional
+  arrays in the top of this document they must always start with the
+  parent of all subsequent elements with a order value of 0;
+
+*/
+
+function appendInOrder(arrayOfElements, order, techs) {
+  const orderCopy = [...order];
+
+  if (techs) {
+    for (let i = 1; i < techs.length; i += 1) {
+      orderCopy.splice(6, 0, 3);
+      orderCopy.splice(7, 0, 4);
+    }
+  }
+
+  let indexes = [findDeepestChild(orderCopy)];
+  let highestChild = orderCopy[indexes[0]];
+  let currentElements = [arrayOfElements[indexes[0]]];
+  let parentElement;
+
+  while (highestChild !== 0) {
+    for (let i = indexes[0] - 1; i >= 0; i -= 1) {
+      if (orderCopy[i] < highestChild) {
+        parentElement = arrayOfElements[i];
+        break;
+      } else if (orderCopy[i] === highestChild) {
+        currentElements.push(arrayOfElements[i]);
+        indexes.push(i);
+      }
+    }
+
+    orderCopy.splice(indexes[0], 1);
+
+    for (let i = 0; i < currentElements.length; i += 1) {
+      parentElement.appendChild(currentElements[i]);
+    }
+
+    indexes.forEach((index) => {
+      arrayOfElements.splice(index, 1);
+    });
+
+    indexes = [findDeepestChild(orderCopy)];
+    highestChild = orderCopy[indexes[0]];
+    currentElements = [arrayOfElements[indexes[0]]];
+  }
+
+  return parentElement;
+}
