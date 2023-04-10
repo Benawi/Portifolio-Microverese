@@ -433,7 +433,7 @@ function buildModalPopUp(button, title, Img) {
 
   modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 
-  if (window.innerWidth >= 1100) {
+  if (window.innerWidth >= 500) {
     modalCloseBtn.setAttribute(
       'src',
       './css/img/detailed_works/icon_close_desk.svg',
