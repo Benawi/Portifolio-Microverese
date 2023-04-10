@@ -8,27 +8,27 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
  
  const WORKS_PROPS = [
   {
-    'card-title-1': 'This is my fake work number-1',
+    'card-title-1': 'Projec demo - 1',
     techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
     'card-img-1': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-2': 'This is my fake work number-2',
+    'card-title-2': 'Projec demo - 2',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-2': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-3': 'This is my fake work number-3',
+    'card-title-3': 'Projec demo - 3',
     techs: ['css', 'html'],
     'card-img-3': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-4': 'This is my fake work number-4',
+    'card-title-4': 'Projec demo - 4',
     techs: ['Ruby on rails'],
     'card-img-4': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-5': 'This is my fake work number-5',
+    'card-title-5': 'Projec demo - 5',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-5': './css/img/portfolio_snapshoot.png',
   },
