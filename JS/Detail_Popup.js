@@ -98,3 +98,5 @@ const DEFAULT_CARD_WORK = [
     'See Project',
   ],
 ];
+// This const stores the order that the elements should be nested when builded
+const DEFAULT_CARD_WORK_ORDER = [0, 1, 1, 2, 3, 2, 3, 4, 2];
