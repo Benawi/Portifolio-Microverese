@@ -449,3 +449,11 @@ function buildModalPopUp(button, title, Img) {
 
   return popupModal;
 }
+// Add remove modal button 
+function removeModal(lintersright) {
+  if (!lintersright) {
+    document.querySelector('html').classList.toggle('no-overflow-y');
+    const modal = document.querySelector('.recent-works-popup-out-container');
+    modal.parentElement.removeChild(modal);
+  }
+}
