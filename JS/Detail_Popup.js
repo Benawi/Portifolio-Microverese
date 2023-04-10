@@ -100,3 +100,42 @@ const DEFAULT_CARD_WORK = [
 ];
 // This const stores the order that the elements should be nested when builded
 const DEFAULT_CARD_WORK_ORDER = [0, 1, 1, 2, 3, 2, 3, 4, 2];
+// This const stores the basic html content of the modal popup window
+const POPUP_MODAL = [
+  ['div', ['recent-works-popup-out-container']],
+  ['div', ['recent-works-popup-in-container']],
+  [
+    'img',
+    ['popup-close-icon'],
+    'popup-close-button',
+    '',
+    '',
+    '',
+    'removeModal()',
+  ],
+  ['div', ['recent-works-detailed', 'flex-container-column']],
+  ['img', ['popup-work-img', 'mb-12']],
+  [
+    'h2',
+    [
+      'popup-header',
+      'expanded-menu-item',
+      'project-title-custom-font',
+      'mb-12',
+    ],
+    'popup-title',
+  ],
+  ['ul', ['popup-techs', 'flex-container-row', 'mb-12']],
+  ['p', ['popup-p-font', 'default-custom-font', 'mb-12'], 'popup-text'],
+  ['div', ['popup-btn-container', 'flex-container-row']],
+  [
+    'button',
+    ['custom-button', 'popup-btn-font', 'flex-container-row'],
+    'popup-live',
+  ],
+  [
+    'button',
+    ['custom-button', 'popup-btn-font', 'flex-container-row'],
+    'popup-source',
+  ],
+];
