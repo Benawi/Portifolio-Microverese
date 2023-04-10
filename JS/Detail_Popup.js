@@ -245,3 +245,18 @@ function buildAllElements(instructions, iterationPosFix, techs) {
 
   return AllElements;
 }
+// Plays a part in the logic of how the elements should be nested
+
+function findDeepestChild(elementOrder) {
+  let highestChild = 0;
+  let index = 0;
+
+  for (let i = 0; i < elementOrder.length; i += 1) {
+    if (highestChild < elementOrder[i]) {
+      highestChild = elementOrder[i];
+      index = i;
+    }
+  }
+
+  return index;
+}
