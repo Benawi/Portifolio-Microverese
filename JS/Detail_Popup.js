@@ -152,3 +152,9 @@ const POPUP_MODAL_ORDER = [0, 1, 2, 2, 3, 3, 3, 3, 3, 4, 4];
 function generateElement(element) {
   return document.createElement(element);
 }
+// add class names passed as parameters to the element passed as a parameter
+function addElementClassName(element, name) {
+  name.forEach((className) => {
+    element.classList.add(className);
+  });
+}
