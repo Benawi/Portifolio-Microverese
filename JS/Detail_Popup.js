@@ -142,3 +142,13 @@ const POPUP_MODAL = [
 
 // This const stores the order that the elements should be nested when builded
 const POPUP_MODAL_ORDER = [0, 1, 2, 2, 3, 3, 3, 3, 3, 4, 4];
+/*
+  General Functionality to create an element, add classNames,
+  add Id and append as element after another element;
+
+*/
+
+// Creates and element
+function generateElement(element) {
+  return document.createElement(element);
+}
