@@ -370,3 +370,15 @@ function buildCardWorkHeader() {
 
   return child;
 }
+// building the entire WorkSection and appending it's two childs, isn't that beautiful?
+function buildCardWorkSection() {
+  const cardWorkSection = buildElement(CARD_WORK_SECTION);
+
+  const firstChild = buildCardWorkHeader();
+  const secondChild = buildCardWorkContainer(WORKS_PROPS);
+
+  cardWorkSection.appendChild(firstChild);
+  cardWorkSection.appendChild(secondChild);
+
+  return cardWorkSection;
+}
