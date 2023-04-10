@@ -177,3 +177,9 @@ function addElementName(element, name) {
     element.setAttribute('name', name);
   }
 }
+// add value to the element passed as a parameter
+function addElementValue(element, value) {
+  if (value) {
+    element.setAttribute('value', value);
+  }
+}
