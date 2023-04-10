@@ -382,3 +382,13 @@ function buildCardWorkSection() {
 
   return cardWorkSection;
 }
+//get Parent buttton
+function getButtonParent(button, parentId) {
+  let parent = button.parentElement;
+
+  while (!parent.id.includes(parentId)) {
+    parent = parent.parentElement;
+  }
+
+  return parent;
+}
