@@ -189,3 +189,14 @@ function addOnClickValue(element, value) {
     element.setAttribute('onclick', value);
   }
 }
+// append the element after the previous element
+function appendAfterElement(newElement, referenceElement) {
+  if (referenceElement.nextSibling) {
+    referenceElement.parentNode.insertBefore(
+      newElement,
+      referenceElement.nextSibling,
+    );
+  } else {
+    referenceElement.parentNode.appendChild(newElement);
+  }
+}
