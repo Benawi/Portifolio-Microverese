@@ -392,3 +392,60 @@ function getButtonParent(button, parentId) {
 
   return parent;
 }
+// build popup model 
+function buildModalPopUp(button, title, Img) {
+  const popupModal = appendInOrder(
+    buildAllElements(POPUP_MODAL),
+    POPUP_MODAL_ORDER,
+  );
+
+  const cardWorkDiv = getButtonParent(button, 'card-work');
+  const liItems = cardWorkDiv.querySelectorAll('.card-tag');
+
+  const modalUlElem = popupModal.querySelector('.popup-techs');
+  const modalTitleElem = popupModal.querySelector('#popup-title');
+  const modalImgElem = popupModal.querySelector('.popup-work-img');
+  const modalCloseBtn = popupModal.querySelector('#popup-close-button');
+  const popuplive = popupModal.querySelector('#popup-live');
+  const popupsource = popupModal.querySelector('#popup-source');
+  const modalText = popupModal.querySelector('#popup-text');
+
+  for (let i = 0; i < liItems.length; i += 1) {
+    const liClone = liItems[i].cloneNode(true);
+
+    liClone.firstChild.setAttribute('class',
+      'popup-tags-font default-custom-font');
+    liClone.setAttribute('class', 'popup-tag');
+    modalUlElem.append(liClone);
+  }
+
+  modalTitleElem.textContent = title.innerText;
+  modalImgElem.setAttribute('src', Img.getAttribute('src'));
+
+  popuplive.innerHTML = 'See Live'
+    + '<i>'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="">'
+    + '</i>';
+  popupsource.innerHTML = 'See Source'
+    + '<i>'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="">'
+    + '</i>';
+
+  modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+
+  if (window.innerWidth >= 1100) {
+    modalCloseBtn.setAttribute(
+      'src',
+      './css/img/detailed_works/icon_close_desk.svg',
+    );
+    modalImgElem.setAttribute('src', './css/img/portfolio_snapshoot_desk.png');
+  } else {
+    modalCloseBtn.setAttribute(
+      'src',
+      './css/img/detailed_works/icon_close.svg',
+    );
+    modalImgElem.setAttribute('src', Img.getAttribute('src'));
+  }
+
+  return popupModal;
+}
