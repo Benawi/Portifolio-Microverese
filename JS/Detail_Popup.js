@@ -227,3 +227,21 @@ function buildAllElements(instructions, iterationPosFix, techs) {
   } else {
     iterationPosFix = '';
   }
+  if (techs) {
+    for (let i = 0; i < techs.length; i += 1) {
+      const li = ['li', ['card-tag']];
+      const h3 = ['h3', ['custom-tags-font', 'default-custom-font']];
+      copyOfInstructions.splice(6, 0, li);
+      copyOfInstructions.splice(7, 0, h3);
+    }
+  }
+
+  const AllElements = [];
+
+  // buildingSingle Elements and pushing they to an array of html fresh new elements;
+  copyOfInstructions.forEach((instruction) => {
+    AllElements.push(buildElement(instruction, iterationPosFix));
+  });
+
+  return AllElements;
+}
