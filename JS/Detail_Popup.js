@@ -211,3 +211,19 @@ function buildElement(instructions, iterationPosFix = '') {
   addOnClickValue(newElement, instructions[6]);
   return newElement;
 }
+
+/*
+  Function that builds all elements in an two dimensional array of
+  elements/elements build instruction
+
+*/
+function buildAllElements(instructions, iterationPosFix, techs) {
+  // Cloning the instructions array 
+  const copyOfInstructions = [...instructions];
+
+  // checking if this argument is valid
+  if (iterationPosFix) {
+    iterationPosFix = `-${iterationPosFix}`;
+  } else {
+    iterationPosFix = '';
+  }
