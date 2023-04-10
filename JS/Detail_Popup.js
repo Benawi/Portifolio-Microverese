@@ -457,3 +457,10 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
+function closeModal() {
+  const button = document.getElementById('popup-close-btn');
+  if (button) {
+    button.setAttribute('onclick', 'removeModal()');
+  }
+  removeModal(true);
+}
