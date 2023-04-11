@@ -1,51 +1,50 @@
-/* Here I'm grabbing a previous Element,
+/* Here I'm grabbing a previous Element( Portfoio section which is done by html tags),
 so I can reference it in a later function, and being able to insert
 a new Generated element after this PREVIOUS_NODE.  */
 const PREVIOUS_NODE = document.getElementById('headline-container');
 
 /* In here I summarize all the information that can be different in
- all the little rectangules that happens to show all of my Works  :p */
- 
- const WORKS_PROPS = [
+ all the little rectangules cards that happens to show all of my Works */
+
+const WORKS_PROPS = [
   {
-    'card-title-1': 'Projec demo - 1',
+    'card-title-1': 'Project Card - 1',
     techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
     'card-img-1': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-2': 'Projec demo - 2',
+    'card-title-2': 'Project Card - 2',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-2': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-3': 'Projec demo - 3',
+    'card-title-3': 'Project Card - 3',
     techs: ['css', 'html'],
     'card-img-3': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-4': 'Projec demo - 4',
+    'card-title-4': 'Project Card - 4',
     techs: ['Ruby on rails'],
     'card-img-4': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-5': 'Projec demo - 5',
+    'card-title-5': 'Project Card - 5',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-5': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-6': 'How many fakes works do I have?',
-    techs: ['Tears', 'Sorrow', 'Grief'],
+    'card-title-6': 'Project Card - 6',
+    techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-6': './css/img/portfolio_snapshoot.png',
   },
 ];
 
-// creat work card section array 
+// creat work card section array
 const CARD_WORK_SECTION = [
   'section',
   ['recent-works-container', 'flex-container-column'],
   'portfolio',
 ];
-
 
 /*  Here's a const that stores the instructions for building
     the card_work_container div element!  */
@@ -218,7 +217,7 @@ function buildElement(instructions, iterationPosFix = '') {
 
 */
 function buildAllElements(instructions, iterationPosFix, techs) {
-  // Cloning the instructions array 
+  // Cloning the instructions array
   const copyOfInstructions = [...instructions];
 
   // checking if this argument is valid
@@ -347,6 +346,7 @@ function buildCardWorkContainer(propsRules) {
 
     titleChild.textContent = objRule[titleKey];
     imgChild.setAttribute('src', objRule[imgKey]);
+    imgChild.setAttribute('alt', 'card img1');
 
     childElements.push(child);
   });
@@ -382,7 +382,7 @@ function buildCardWorkSection() {
 
   return cardWorkSection;
 }
-//get Parent buttton
+// get Parent buttton
 function getButtonParent(button, parentId) {
   let parent = button.parentElement;
 
@@ -392,7 +392,7 @@ function getButtonParent(button, parentId) {
 
   return parent;
 }
-// build popup model 
+// build popup model
 function buildModalPopUp(button, title, Img) {
   const popupModal = appendInOrder(
     buildAllElements(POPUP_MODAL),
@@ -424,11 +424,11 @@ function buildModalPopUp(button, title, Img) {
 
   popuplive.innerHTML = 'See Live'
     + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="">'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="See live">'
     + '</i>';
   popupsource.innerHTML = 'See Source'
     + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="">'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="Source">'
     + '</i>';
 
   modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
@@ -449,7 +449,7 @@ function buildModalPopUp(button, title, Img) {
 
   return popupModal;
 }
-// Add remove modal button 
+// Add remove modal button
 function removeModal(lintersright) {
   if (!lintersright) {
     document.querySelector('html').classList.toggle('no-overflow-y');
@@ -457,7 +457,7 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-//  add close model 
+//  add close model
 function closeModal() {
   const button = document.getElementById('popup-close-btn');
   if (button) {
@@ -465,7 +465,7 @@ function closeModal() {
   }
   removeModal(true);
 }
-// Add event listner button 
+// Add event listner button
 function buttonsEventListener() {
   const buttons = document.querySelectorAll('[id*="button"]');
   const titles = document.querySelectorAll('[id^="card-title"]');
