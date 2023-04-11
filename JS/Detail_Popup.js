@@ -346,6 +346,7 @@ function buildCardWorkContainer(propsRules) {
 
     titleChild.textContent = objRule[titleKey];
     imgChild.setAttribute('src', objRule[imgKey]);
+    imgChild.setAttribute('alt','card img1');
 
     childElements.push(child);
   });
@@ -423,11 +424,11 @@ function buildModalPopUp(button, title, Img) {
 
   popuplive.innerHTML = 'See Live'
     + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="">'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="See live">'
     + '</i>';
   popupsource.innerHTML = 'See Source'
     + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="">'
+    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="Source">'
     + '</i>';
 
   modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
