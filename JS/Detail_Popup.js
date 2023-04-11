@@ -1,10 +1,10 @@
-/* Here I'm grabbing a previous Element,
+/* Here I'm grabbing a previous Element( Portfoio section which is done by html tags),
 so I can reference it in a later function, and being able to insert
 a new Generated element after this PREVIOUS_NODE.  */
 const PREVIOUS_NODE = document.getElementById('headline-container');
 
 /* In here I summarize all the information that can be different in
- all the little rectangules that happens to show all of my Works  :p */
+ all the little rectangules cards that happens to show all of my Works */
 
 const WORKS_PROPS = [
   {
