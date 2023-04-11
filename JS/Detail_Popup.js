@@ -346,7 +346,7 @@ function buildCardWorkContainer(propsRules) {
 
     titleChild.textContent = objRule[titleKey];
     imgChild.setAttribute('src', objRule[imgKey]);
-    imgChild.setAttribute('alt','card img1');
+    imgChild.setAttribute('alt', 'card img1');
 
     childElements.push(child);
   });
