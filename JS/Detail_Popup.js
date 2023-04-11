@@ -33,8 +33,8 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
     'card-img-5': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-6': 'How many fakes works do I have?',
-    techs: ['Tears', 'Sorrow', 'Grief'],
+    'card-title-6': 'Projec demo - 6',
+    techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-6': './css/img/portfolio_snapshoot.png',
   },
 ];
