@@ -5,8 +5,8 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
 
 /* In here I summarize all the information that can be different in
  all the little rectangules that happens to show all of my Works  :p */
- 
- const WORKS_PROPS = [
+
+const WORKS_PROPS = [
   {
     'card-title-1': 'Projec demo - 1',
     techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
@@ -39,13 +39,12 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
   },
 ];
 
-// creat work card section array 
+// creat work card section array
 const CARD_WORK_SECTION = [
   'section',
   ['recent-works-container', 'flex-container-column'],
   'portfolio',
 ];
-
 
 /*  Here's a const that stores the instructions for building
     the card_work_container div element!  */
@@ -218,7 +217,7 @@ function buildElement(instructions, iterationPosFix = '') {
 
 */
 function buildAllElements(instructions, iterationPosFix, techs) {
-  // Cloning the instructions array 
+  // Cloning the instructions array
   const copyOfInstructions = [...instructions];
 
   // checking if this argument is valid
@@ -382,7 +381,7 @@ function buildCardWorkSection() {
 
   return cardWorkSection;
 }
-//get Parent buttton
+// get Parent buttton
 function getButtonParent(button, parentId) {
   let parent = button.parentElement;
 
@@ -392,7 +391,7 @@ function getButtonParent(button, parentId) {
 
   return parent;
 }
-// build popup model 
+// build popup model
 function buildModalPopUp(button, title, Img) {
   const popupModal = appendInOrder(
     buildAllElements(POPUP_MODAL),
@@ -449,7 +448,7 @@ function buildModalPopUp(button, title, Img) {
 
   return popupModal;
 }
-// Add remove modal button 
+// Add remove modal button
 function removeModal(lintersright) {
   if (!lintersright) {
     document.querySelector('html').classList.toggle('no-overflow-y');
@@ -457,7 +456,7 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-//  add close model 
+//  add close model
 function closeModal() {
   const button = document.getElementById('popup-close-btn');
   if (button) {
@@ -465,7 +464,7 @@ function closeModal() {
   }
   removeModal(true);
 }
-// Add event listner button 
+// Add event listner button
 function buttonsEventListener() {
   const buttons = document.querySelectorAll('[id*="button"]');
   const titles = document.querySelectorAll('[id^="card-title"]');
