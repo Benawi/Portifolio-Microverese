@@ -43,13 +43,29 @@ The repository also contains files for setting up linters and validators.
   <ul>
     <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
     <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
+       <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
   </ul>
 </details>
 
 
 ### Key Features <a name="key-features"></a>
-
-- **no linter errors**
+- When the user clicks (or taps) the hamburger button, the mobile menu appears.
+- When the user clicks (or taps) the close (X) button, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
+- When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
+- When the user clicks (or taps) the close (X) button, the popup disappears.
+- A JavaScript array used to store all of the information of all projects card.
+- For each project  the following pieces of data  : name, description, featured image, technologies, link to live version, link to source stored in a JavaScript object.
+- The recent work section is created when the page loads because the components are created dynamically using the information stored in that JavaScript.
+- Popups(Modal) Implemented for both mobile and desktop screen sizes.
+- I try to stick pages to the design as much as possible using [the templates 3 in Figma]
+- The content of the email field  will be validated
+- When the user submits the form, it checks, weather the email is in lower case or not .
+    - If the validation is OK, the form will be sent.
+    - If the validation is not OK, it shows an error message to the user near the submit button informing that the error and the form is not sent.
+-  No Linters errors
+![image](https://user-images.githubusercontent.com/21217148/231277514-f60433cd-f43e-4575-ac85-178403042f8a.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
