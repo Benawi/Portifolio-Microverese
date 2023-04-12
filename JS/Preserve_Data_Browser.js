@@ -15,3 +15,11 @@ function allData() {
   
     return obj;
   }
+  /* Set an item of form */
+function setForm() {
+    const formData = JSON.parse(localStorage.getItem('form_data'));
+  
+    inputName.value = formData.user_name;
+    inputEmail.value = formData.user_email;
+    inputMessage.value = formData.user_message;
+  }
