@@ -193,7 +193,7 @@ function appendAfterElement(newElement, referenceElement) {
   if (referenceElement.nextSibling) {
     referenceElement.parentNode.insertBefore(
       newElement,
-      referenceElement.nextSibling,
+      referenceElement.nextSibling
     );
   } else {
     referenceElement.parentNode.appendChild(newElement);
@@ -323,7 +323,7 @@ function buildCardWorkContainer(propsRules) {
     const child = appendInOrder(
       buildAllElements(DEFAULT_CARD_WORK, iteration, objRule.techs),
       DEFAULT_CARD_WORK_ORDER,
-      objRule.techs,
+      objRule.techs
     );
 
     iteration += 1;
@@ -362,7 +362,7 @@ function buildCardWorkContainer(propsRules) {
 function buildCardWorkHeader() {
   const child = appendInOrder(
     buildAllElements(DEFAULT_CARD_WORK_HEADER),
-    DEFAULT_CARD_WORK_HEADER_ORDER,
+    DEFAULT_CARD_WORK_HEADER_ORDER
   );
 
   const titleChild = child.querySelector('#work-title');
@@ -396,7 +396,7 @@ function getButtonParent(button, parentId) {
 function buildModalPopUp(button, title, Img) {
   const popupModal = appendInOrder(
     buildAllElements(POPUP_MODAL),
-    POPUP_MODAL_ORDER,
+    POPUP_MODAL_ORDER
   );
 
   const cardWorkDiv = getButtonParent(button, 'card-work');
@@ -413,8 +413,10 @@ function buildModalPopUp(button, title, Img) {
   for (let i = 0; i < liItems.length; i += 1) {
     const liClone = liItems[i].cloneNode(true);
 
-    liClone.firstChild.setAttribute('class',
-      'popup-tags-font default-custom-font');
+    liClone.firstChild.setAttribute(
+      'class',
+      'popup-tags-font default-custom-font'
+    );
     liClone.setAttribute('class', 'popup-tag');
     modalUlElem.append(liClone);
   }
@@ -422,27 +424,30 @@ function buildModalPopUp(button, title, Img) {
   modalTitleElem.textContent = title.innerText;
   modalImgElem.setAttribute('src', Img.getAttribute('src'));
 
-  popuplive.innerHTML = 'See Live'
-    + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="See live">'
-    + '</i>';
-  popupsource.innerHTML = 'See Source'
-    + '<i>'
-    + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="Source">'
-    + '</i>';
+  popuplive.innerHTML =
+    'See Live' +
+    '<i>' +
+    '<img class="popup-button-icon" src="./css/img/detailed_works/icon_seelive.svg" alt="See live">' +
+    '</i>';
+  popupsource.innerHTML =
+    'See Source' +
+    '<i>' +
+    '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="Source">' +
+    '</i>';
 
-  modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+  modalText.textContent =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 
   if (window.innerWidth >= 500) {
     modalCloseBtn.setAttribute(
       'src',
-      './css/img/detailed_works/icon_close_desk.svg',
+      './css/img/detailed_works/icon_close_desk.svg'
     );
     modalImgElem.setAttribute('src', './css/img/portfolio_snapshoot_desk.png');
   } else {
     modalCloseBtn.setAttribute(
       'src',
-      './css/img/detailed_works/icon_close.svg',
+      './css/img/detailed_works/icon_close.svg'
     );
     modalImgElem.setAttribute('src', Img.getAttribute('src'));
   }
@@ -457,4 +462,4 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-// Please add here your contribution - Code partner
+// Please add here your contribution - Code partner 
