@@ -28,17 +28,13 @@
     </section>
     <main>
       <!-- End of mobile menu  added-->
-    <header>
-      <div id="toolbar-container" class="toolbar-container flex-container-row">
-        <div class="toolbar logo">
-          <a class="logo-link" href="#" title="Welcome HomePage link">
-            <img src="./css/img/about_me/technologies/language_icon.png" alt="Italian Trulli">
-            <h3 class="logo-text">BENA</h3>
-          </a>
-        </div>
-        <nav class="toolbar menu">
-          <div class="menu-trigram">
-            <a id="menu-btn" class="menu-link" href="#" title="Open Menu link"></a>
+      <header>
+        <div id="toolbar-container" class="toolbar-container flex-container-row">
+          <div class="toolbar logo">
+            <a class="logo-link" href="#" title="Welcome HomePage link">
+              <img src="./css/img/about_me/technologies/language_icon.png" alt="Italian Trulli">
+              <h3 class="logo-text">BENA</h3>
+            </a>
           </div>
           <ul class="toolbar-menu-desktop flex-container-row disabled">
             <li>
@@ -214,11 +210,11 @@
         <input class="form-email default-input-style default-custom-font" type="email" id="user_email" name="user_email"
           placeholder="Enter your e-mail" required />
         <label class="disabled" for="user_message">Message</label>
-        <div id="email_message" class="email-message default-custom-font disabled">E-mail need to be passed in lowercase
-          letters only </div>
         <textarea class="default-textarea-style default-custom-font" id="user_message" name="user_message"
           placeholder="Enter text here" maxlength="500" required></textarea>
-        <button class="custom-button" type="submit">Get in Touch</button>
+          <div id="email_message" class="email-message default-custom-font disabled">E-mail must be in lowercase
+            letters only and your data is not recoreded </div>
+              <button class="custom-button" type="submit">Get in Touch</button>
       </form>
       <a class="contact-email default-custom-font " href="mailto:habtamualemayehu16@gmail.com">
         habtamualemayehu16@gmail.com
@@ -287,6 +283,6 @@
   </main>
   <script type="text/javascript" src="./JS/Index.js"></script>
   <script type="text/javascript" src="./JS/Detail_Popup.js"></script>
+  <script type="text/javascript" src="./JS/Validate_Contact_form.js"></script>
 </body>
-
 </html>
