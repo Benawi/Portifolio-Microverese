@@ -3,37 +3,89 @@ so I can reference it in a later function, and being able to insert
 a new Generated element after this PREVIOUS_NODE.  */
 const PREVIOUS_NODE = document.getElementById('headline-container');
 
+const WORKS_CARDS = [
+  {
+    'card-title-1': 'Keeping track of hundreds of components',
+    techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
+    'card-img-1': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+  },
+  {
+    'card-title-2': 'Keeping track of hundreds of components',
+    techs: ['Ruby on rails', 'JavScript', 'html'],
+    'card-img-2': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+
+  },
+  {
+    'card-title-3': 'Keeping track of hundreds of components',
+    techs: ['css', 'html'],
+    'card-img-3': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+  },
+  {
+    'card-title-4': 'Keeping track of hundreds of components',
+    techs: ['Ruby on rails'],
+    'card-img-4': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+  },
+  {
+    'card-title-5': 'Keeping track of hundreds of components',
+    techs: ['Ruby on rails', 'JavScript', 'html'],
+    'card-img-5': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+  },
+  {
+    'card-title-6': 'Keeping track of hundreds of components',
+    techs: ['Ruby on rails', 'JavScript', 'html'],
+    'card-img-6': './css/img/portfolio_snapshoot.png',
+    'popup-description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    'see-live': 'https://benawi.github.io/Portifolio-Microverese/',
+    'See-source': 'https://github.com/Benawi/Portifolio-Microverese',
+  },
+];
+
 /* In here I summarize all the information that can be different in
  all the little rectangules cards that happens to show all of my Works */
 
 const WORKS_PROPS = [
   {
-    'card-title-1': 'Project Card - 1',
+    'card-title-1': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
     'card-img-1': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-2': 'Project Card - 2',
+    'card-title-2': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-2': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-3': 'Project Card - 3',
+    'card-title-3': 'Keeping track of hundreds of components',
     techs: ['css', 'html'],
     'card-img-3': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-4': 'Project Card - 4',
+    'card-title-4': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails'],
     'card-img-4': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-5': 'Project Card - 5',
+    'card-title-5': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-5': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-6': 'Project Card - 6',
+    'card-title-6': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-6': './css/img/portfolio_snapshoot.png',
   },
@@ -50,7 +102,6 @@ const CARD_WORK_SECTION = [
     the card_work_container div element!  */
 
 const CARD_WORK_CONTAINER = ['div', ['card-work-container']];
-
 // container that stores all the different card works
 const DEFAULT_CARD_WORK_HEADER = [
   ['div', ['recent-works', 'intro-header', 'flex-container-column']],
@@ -409,8 +460,8 @@ function buildModalPopUp(button, title, Img) {
   const popuplive = popupModal.querySelector('#popup-live');
   const popupsource = popupModal.querySelector('#popup-source');
   const modalText = popupModal.querySelector('#popup-text');
-
-  for (let i = 0; i < liItems.length; i += 1) {
+  let i = WORKS_CARDS.length;
+  for (i = 0; i < liItems.length; i += 1) {
     const liClone = liItems[i].cloneNode(true);
 
     liClone.firstChild.setAttribute(
@@ -433,9 +484,9 @@ function buildModalPopUp(button, title, Img) {
     + '<img class="popup-button-icon" src="./css/img/detailed_works/icon_source.svg" alt="Source">'
     + '</i>';
 
-  modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+  modalText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.";
 
-  if (window.innerWidth >= 500) {
+  if (window.innerWidth >= 1100) {
     modalCloseBtn.setAttribute(
       'src',
       './css/img/detailed_works/icon_close_desk.svg',

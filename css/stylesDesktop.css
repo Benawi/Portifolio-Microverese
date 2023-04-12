@@ -94,10 +94,22 @@
   }
 
   .popup-close-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
     position: absolute;
+    width: 40px;
+    height: 40px;
     right: calc((100vw - 1000px) / 2 + 24px);
-    top: 24px;
     margin: 0 24px 0;
+    top: 24px;
+
+    /* Neutrals/N30 */
+
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
   }
 
   .popup-header {
