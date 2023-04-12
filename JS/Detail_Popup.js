@@ -413,8 +413,10 @@ function buildModalPopUp(button, title, Img) {
   for (let i = 0; i < liItems.length; i += 1) {
     const liClone = liItems[i].cloneNode(true);
 
-    liClone.firstChild.setAttribute('class',
-      'popup-tags-font default-custom-font');
+    liClone.firstChild.setAttribute(
+      'class',
+      'popup-tags-font default-custom-font',
+    );
     liClone.setAttribute('class', 'popup-tag');
     modalUlElem.append(liClone);
   }
@@ -457,7 +459,7 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-//  add close model
+
 function closeModal() {
   const button = document.getElementById('popup-close-btn');
   if (button) {
@@ -471,7 +473,6 @@ function buttonsEventListener() {
   const titles = document.querySelectorAll('[id^="card-title"]');
   const imgs = document.querySelectorAll('[id^="card-img"]');
   const cardWorkSection = document.getElementById('portfolio');
-
   for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', () => {
       const modal = buildModalPopUp(buttons[i], titles[i], imgs[i]);
@@ -481,7 +482,5 @@ function buttonsEventListener() {
     });
   }
 }
-
 appendAfterElement(buildCardWorkSection(), PREVIOUS_NODE);
-
 buttonsEventListener();

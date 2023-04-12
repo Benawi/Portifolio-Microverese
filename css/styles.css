@@ -34,11 +34,11 @@ body {
 /* Custom Font */
 .default-custom-font {
   font-family: "Inter", Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
