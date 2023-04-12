@@ -8,32 +8,32 @@ const PREVIOUS_NODE = document.getElementById('headline-container');
 
 const WORKS_PROPS = [
   {
-    'card-title-1': 'Project Card - 1',
+    'card-title-1': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'css', 'JavScript', 'html'],
     'card-img-1': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-2': 'Project Card - 2',
+    'card-title-2': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-2': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-3': 'Project Card - 3',
+    'card-title-3': 'Keeping track of hundreds of components',
     techs: ['css', 'html'],
     'card-img-3': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-4': 'Project Card - 4',
+    'card-title-4': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails'],
     'card-img-4': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-5': 'Project Card - 5',
+    'card-title-5': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-5': './css/img/portfolio_snapshoot.png',
   },
   {
-    'card-title-6': 'Project Card - 6',
+    'card-title-6': 'Keeping track of hundreds of components',
     techs: ['Ruby on rails', 'JavScript', 'html'],
     'card-img-6': './css/img/portfolio_snapshoot.png',
   },
