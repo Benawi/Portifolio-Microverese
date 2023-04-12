@@ -462,4 +462,20 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-// Please add here your contribution - Code partner 
+// Add event listner button 
+function buttonsEventListener() {
+  const buttons = document.querySelectorAll('[id*="button"]');
+  const titles = document.querySelectorAll('[id^="card-title"]');
+  const imgs = document.querySelectorAll('[id^="card-img"]');
+  const cardWorkSection = document.getElementById('portfolio');
+  for (let i = 0; i < buttons.length; i += 1) {
+    buttons[i].addEventListener('click', () => {
+      const modal = buildModalPopUp(buttons[i], titles[i], imgs[i]);
+      cardWorkSection.append(modal);
+      document.querySelector('html').classList.toggle('no-overflow-y');
+      closeModal();
+    });
+  }
+}
+appendAfterElement(buildCardWorkSection(), PREVIOUS_NODE);
+buttonsEventListener();
