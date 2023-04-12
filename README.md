@@ -64,7 +64,7 @@ The repository also contains files for setting up linters and validators.
 - When the user submits the form, it checks, weather the email is in lower case or not .
     - If the validation is OK, the form will be sent.
     - If the validation is not OK, it shows an error message to the user near the submit button informing that the error and the form is not sent.
-![image](https://user-images.githubusercontent.com/21217148/231277514-f60433cd-f43e-4575-ac85-178403042f8a.png)
+- ![image](https://user-images.githubusercontent.com/21217148/231277514-f60433cd-f43e-4575-ac85-178403042f8a.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
