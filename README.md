@@ -79,7 +79,7 @@ In order to run this project you need:
 - git installed on your OS.
 
 ### Install
-
+> https://github.com/microverseinc/linters-config/tree/master/html-css-js
 Installations required to run this project:
 
 - Webhint installation. Run the following command:
@@ -87,6 +87,23 @@ Installations required to run this project:
 
 - Stylelint installation. Run the following command:
 > npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+### ESLint
+- Run
+
+> npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+not sure how to use npm? Read this.
+
+> Copy .eslintrc.json to the root directory of your project.
+
+> Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
+
+> If you think that change is necessary - open a Pull Request in this repository and let your code reviewer know about it.
+Run npx eslint . on the root of your directory of your project.
+
+> Fix linter errors.
+
+> IMPORTANT NOTE: feel free to research auto-correct options for Eslint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
 ### Usage
 
@@ -108,7 +125,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 ## 👥 Authors <a name="authors"></a>
 
 👤 Habtamu Alemayehu
-- GitHub: [@bena] https://github.com/Benawi
+- GitHub: [@bena](https://github.com/Benawi)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
