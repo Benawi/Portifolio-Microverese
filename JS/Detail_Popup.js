@@ -457,4 +457,4 @@ function removeModal(lintersright) {
     modal.parentElement.removeChild(modal);
   }
 }
-// Please add here your contribution - Code partner 
+// Please add here your contribution - Code partner
