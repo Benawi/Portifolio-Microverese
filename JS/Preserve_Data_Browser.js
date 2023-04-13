@@ -24,6 +24,13 @@ function setForm() {
 }
 /* Code partner, please add your code here */
 /* Set local storage */
+    const formData = JSON.parse(localStorage.getItem('form_data'));
+  
+    dataName.value = formData.user_name;
+    dataEmail.value = formData.user_email;
+    dataMessage.value = formData.user_message;
+  }
+  /* Set local storage */
 function setStorage() {
   localStorage.setItem('form_data', JSON.stringify(allData()));
   setForm();
