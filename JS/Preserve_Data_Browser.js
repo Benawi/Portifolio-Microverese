@@ -23,7 +23,12 @@ function setForm() {
     inputEmail.value = formData.user_email;
     inputMessage.value = formData.user_message;
   }
-  /* Please add your code here */
+  /* Code partner, please add your code here */
+  /* Set local storage */
+function setStorage() {
+  localStorage.setItem('form_data', JSON.stringify(allData()));
+  setForm();
+}
 
 
   
