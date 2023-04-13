@@ -29,6 +29,12 @@ function setStorage() {
   localStorage.setItem('form_data', JSON.stringify(allData()));
   setForm();
 }
-
+/* check the current value associated with the given key, or
+    null if the given key does not exist. */
+    if (!localStorage.getItem('form_data')) {
+      setStorage();
+    } else {
+      setForm();
+    }
 
   
