@@ -36,5 +36,8 @@ function setStorage() {
     } else {
       setForm();
     }
-
-  
+/* Sets the value of element's first attribute
+whose qualified name is qualifiedName to value. */
+dataName.setAttribute('onchange', 'setStorage()');
+dataEmail.setAttribute('onchange', 'setStorage()');
+dataMessage.setAttribute('onchange', 'setStorage()');
