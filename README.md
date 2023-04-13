@@ -43,19 +43,33 @@ The repository also contains files for setting up linters and validators.
   <ul>
     <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
     <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
+       <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
   </ul>
 </details>
 
 
 ### Key Features <a name="key-features"></a>
-
-- **no linter errors**
+- When the user clicks (or taps) the hamburger button, the mobile menu appears.
+- When the user clicks (or taps) the close (X) button, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
+- When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
+- When the user clicks (or taps) the close (X) button, the popup disappears.
+- A JavaScript array used to store all of the information of all projects card.
+- For each project  the following pieces of data  : name, description, featured image, technologies, link to live version, link to source stored in a JavaScript object.
+- The recent work section is created when the page loads because the components are created dynamically using the information stored in that JavaScript.
+- Popups(Modal) Implemented for both mobile and desktop screen sizes.
+- I try to stick pages to the design as much as possible using [the templates 3 in Figma]
+- The content of the email field  will be validated
+- When the user submits the form, it checks, weather the email is in lower case or not .
+    - If the validation is OK, the form will be sent.
+    - If the validation is not OK, it shows an error message to the user near the submit button informing that the error and the form is not sent.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- https://benawi.github.io/Portifolio-Microverese/ 
+- [Live Demo](https://benawi.github.io/Portifolio-Microverese/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,14 +93,21 @@ In order to run this project you need:
 - git installed on your OS.
 
 ### Install
+> https://github.com/microverseinc/linters-config/tree/master/html-css-js
+- Installations required to run this project:
 
-Installations required to run this project:
-
-- Webhint installation. Run the following command:
+### Webhint installation. 
+- Run the following command:
 > npm install --save-dev hint@7.x
 
-- Stylelint installation. Run the following command:
+### Stylelint installation.
+- Run the following command:
 > npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+### ESLint
+- Run
+
+> npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 
 ### Usage
 
@@ -108,7 +129,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 ## 👥 Authors <a name="authors"></a>
 
 👤 Habtamu Alemayehu
-- GitHub: [@bena] https://github.com/Benawi
+- GitHub: [@bena](https://github.com/Benawi)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
