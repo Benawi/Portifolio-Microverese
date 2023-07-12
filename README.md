@@ -56,12 +56,12 @@ The repository also contains files for setting up linters and validators.
 - When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
 - When the user clicks (or taps) the close (X) button, the popup disappears.
 - A JavaScript array used to store all of the information of all projects card.
-- For each project  the following pieces of data  : name, description, featured image, technologies, link to live version, link to source stored in a JavaScript object.
+- For each project  the following pieces of data: name, description, featured image, technologies, link to live version, link to source stored in a JavaScript object.
 - The recent work section is created when the page loads because the components are created dynamically using the information stored in that JavaScript.
 - Popups(Modal) Implemented for both mobile and desktop screen sizes.
 - I try to stick pages to the design as much as possible using [the templates 3 in Figma]
 - The content of the email field  will be validated
-- When the user submits the form, it checks, weather the email is in lower case or not .
+- When the user submits the form, it checks, whether the email is in lowercase or not.
     - If the validation is OK, the form will be sent.
     - If the validation is not OK, it shows an error message to the user near the submit button informing that the error and the form is not sent.
 
