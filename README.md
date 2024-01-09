@@ -136,7 +136,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-For the second milestone in building this portfolio website, it will create the mobile website section where you will list your portfolio projects.
+For tthe second milestone in building this portfolio website, it will create the mobile website section where you will list your portfolio projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
