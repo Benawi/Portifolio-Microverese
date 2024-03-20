@@ -88,7 +88,7 @@ Clone this repository to your desired folder:
 
 In order to run this project you need:
 
-- gitHub account;
+- GitHub account;
 - git installed on your OS.
 
 ### Install
