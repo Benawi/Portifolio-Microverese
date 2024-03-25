@@ -54,7 +54,7 @@ The repository also contains files for setting up linters and validators.
 - When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
 - When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
 - When the user clicks (or taps) the close (X) button, the popup disappears.
-- A JavaScript array used to store all of the information of all projects card.
+- A JavaScript array used to store all of the information of all project cards.
 - For each project  the following pieces of data: name, description, featured image, technologies, link to live version, link to source stored in a JavaScript object.
 - The recent work section is created when the page loads because the components are created dynamically using the information stored in that JavaScript.
 - Popups(Modal) Implemented for both mobile and desktop screen sizes.
